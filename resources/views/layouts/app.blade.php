@@ -23,7 +23,7 @@
 	<link rel="stylesheet" href="{{ asset('assets/css/main.css') }}">
 	<!-- responsive -->
 	<link rel="stylesheet" href="{{ asset('assets/css/responsive.css') }}">
-
+    @yield('styles')
 </head>
 <body>
     @include('partials.navbar')
