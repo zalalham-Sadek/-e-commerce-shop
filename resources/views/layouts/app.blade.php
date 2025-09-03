@@ -35,6 +35,8 @@
     <!--PreLoader Ends-->
     @include('partials.navbar')
         @yield('content')
+
+        @include('partials.partners')
     @include('partials.footer')
 
 
