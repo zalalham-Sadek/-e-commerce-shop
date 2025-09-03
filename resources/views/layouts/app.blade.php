@@ -26,10 +26,17 @@
     @yield('styles')
 </head>
 <body>
-    @include('partials.navbar')
-    <div class="container">
-        @yield('content')
+    	<!--PreLoader-->
+    <div class="loader">
+        <div class="loader-inner">
+            <div class="circle"></div>
+        </div>
     </div>
+    <!--PreLoader Ends-->
+    @include('partials.navbar')
+        @yield('content')
+
+        @include('partials.partners')
     @include('partials.footer')
 
 
