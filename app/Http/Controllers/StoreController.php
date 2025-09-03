@@ -26,4 +26,49 @@ class StoreController extends Controller
     {
         return view('shop.product-details');
     }
+     public function about()
+    {
+        // About page data
+        $about = [
+            'title' => 'About Our Store',
+            'description' => 'We are a fruit store providing the freshest fruits directly from farms to your home.',
+            'rawHtml' => '<strong>Our mission</strong> is to deliver quality fruits at the best prices with fast delivery.',
+        ];
+
+        // Team members data
+        $team = [
+            [
+                'name' => 'Jimmy Doe',
+                'role' => 'Farmer',
+                'image' => 'assets/img/team/team-bg-1.jpg',
+                'social' => [
+                    'facebook' => '#',
+                    'twitter' => '#',
+                    'instagram' => '#',
+                ],
+            ],
+            [
+                'name' => 'Marry Doe',
+                'role' => 'Farmer',
+                'image' => 'assets/img/team/team-bg-2.jpg',
+                'social' => [
+                    'facebook' => '#',
+                    'twitter' => '#',
+                    'instagram' => '#',
+                ],
+            ],
+            [
+                'name' => 'Simon Joe',
+                'role' => 'Farmer',
+                'image' => 'assets/img/team/team-bg-3.jpg',
+                'social' => [
+                    'facebook' => '#',
+                    'twitter' => '#',
+                    'instagram' => '#',
+                ],
+            ],
+        ];
+
+        return view('shop.about', compact('about', 'team'));
+    }
 }
