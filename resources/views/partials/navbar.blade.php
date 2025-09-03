@@ -18,7 +18,7 @@
 								<li class="current-list-item"><a href="{{ route('shop.index') }}"> Home</a></li>
 								<li><a href="{{ route('shop.products') }}">Products</a></li>
 								<li><a href="{{ route('shop.about') }}">About</a></li>
-								<li><a href="about.html">Contact us</a></li>
+								<li><a href="{{ route('shop.contact') }}">Contact us</a></li>
 
 
 								<li>
